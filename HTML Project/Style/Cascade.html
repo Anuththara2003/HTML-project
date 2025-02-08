@@ -6,20 +6,53 @@
 
   <style>
 
-    button{
-      color: red;
-    }
+             /*x,x,x,,x = 1000,100,10,1*/
 
-    #my-btn{
-      color: blue;
-    }
+             /*type selector  - 0,0,0,1*/
+             /*   value =  0,0,0,0*/
+
+                    button{
+                      color: red;
+                    }
+
+             /*ID selector  - 0,1,0,0*/
+             /*   value =  0,1000,0,0*/
+
+                #my-btn{
+                  color: blue;
+                }
+
+                P{ /*0,0,0,1*/
+                    color: red;
+                }
+
+                section>.my-class{ /* section -> 0,0,0,1  /> -> 0,0,0,0  / .my-class -> 0,0,1,0  */
+                    color: aqua;
+                }
+
+                #my-class-id{ /* 0,1,0,0 */
+                    color: mediumpurple;
+                }
+
+
+             .my-class{  /*0,0,1,0 */;
+                 color: blue;
+             }
 
   </style>
 
 
 </head>
 <body>
-    <button id="my-btn">Click</button>
+
+    <button id="my-btn" style="color: red">Click</button><!-- 1,0,0,0 -->
+
+    <section>
+    <p class="my-class-" id="my-class-id">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi dolores dolorum, ea eum excepturi fugiat ist
+        e iure mollitia neque omnis porro qui quidem repudiandae sequi? Accusantium architecto nobis vel.
+    </p>
+    </section>
 
 </body>
 </html>
