@@ -1,296 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CSS</title>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>CSS</title>
 
-    <!-- Internal CSS -->
+            <!-- Internal CSS -->
 
-    <style>
-        /* selector {property:value ; property:value} */
+            <style>
+                /* selector {property:value ; property:value} */
 
-        /*/Type Selcector/*/
-        /*h2{*/
-        /*    color: gold;*/
-        /*    background: black;*/
-        /*    text-align: center;*/
-        /*}*/
+                /*/Type Selcector/*/
 
-        /*h4{*/
-        /*    color: brown;*/
-        /*}*/
+                /*h2{*/
+                /*    color: gold;*/
+                /*    background: black;*/
+                /*    text-align: center;*/
+                /*}*/
 
-        /*p{*/
-        /*    background: darkorange;*/
-        /*}*/
+                /*h4{*/
+                /*    color: brown;*/
+                /*}*/
 
-        /*#special-topic{*/
-        /*    background-color: gold;*/
-        /*}*/
+                /*p{*/
+                /*    background: darkorange;*/
+                /*}*/
 
-        /*#special-topic-1{*/
-        /*background-color: blue;*/
-        /*}*/
+                /*#special-topic{*/
+                /*    background-color: gold;*/
+                /*}*/
 
-        /*#special-topic-2{*/
-        /*    background-color: blue;*/
-        /*}*/
-        /*.my-topic{*/
-        /*    background-color: aquamarine;*/
-        /*}*/
+                /*#special-topic-1{*/
+                /*background-color: blue;*/
+                /*}*/
 
+                /*#special-topic-2{*/
+                /*    background-color: blue;*/
+                /*}*/
 
-        /*<!-- universal Selector -->*/
+                /*.my-topic{*/
+                /*    background-color: aquamarine;*/
+                /*}*/
 
-        /** {*/
-        /*    color: greenyellow;*/
-        /*}*/
 
-        /*[name]{*/
+                /*<!-- universal Selector -->*/
 
-        /*    background-color: red;*/
-        /*}*/
+                /** {*/
+                /*    color: greenyellow;*/
+                /*}*/
 
-        /*[name="name2"]{*/
-        /*    */
-        /*  color: gold;*/
-        /*}*/
-
-        /*[href^="https"]{*/
-        /*    background-color: lightpink;*/
-        /*}*/
+                /*[name]{*/
 
+                /*    background-color: red;*/
+                /*}*/
 
-        /*[href^="http"]{*/
-        /*    background-color: yellow;*/
-        /*}*/
+                /*[name="name2"]{*/
+                /*    */
+                /*  color: gold;*/
+                /*}*/
 
-        /*[href$=".lk"]{*/
-        /*    background-color: darkcyan;*/
-        /*}*/
+                /*[href^="https"]{*/
+                /*    background-color: lightpink;*/
+                /*}*/
 
-        /*[href*="ijse"]{*/
-        /*    background-color: darkorange;*/
-        /*}*/
 
+                /*[href^="http"]{*/
+                /*    background-color: yellow;*/
+                /*}*/
 
-        /*:hover{*/
-        /*    color: springgreen;*/
-        /*}*/
+                /*[href$=".lk"]{*/
+                /*    background-color: darkcyan;*/
+                /*}*/
 
-        h1:hover{
-            color: darkcyan;
-        }
+                /*[href*="ijse"]{*/
+                /*    background-color: darkorange;*/
+                /*}*/
 
 
-        h1:active{
-            color: purple;
-        }
+                /*:hover{*/
+                /*    color: springgreen;*/
+                /*}*/
 
-        a:visited{
-            color: red;
-        }
+                h1:hover{
+                    color: darkcyan;
+                }
 
-        input:focus{
-            background-color: yellow;
-        }
 
-        /*li:first-child{*/
-        /*    color: lightgreen;*/
-        /*}*/
+                h1:active{
+                    color: purple;
+                }
 
-        /*li:last-child{*/
-        /*    color: cornflowerblue;*/
-        /*}*/
+                a:visited{
+                    color: red;
+                }
 
-        /*li:nth-child(3){*/
-        /*    color: brown;*/
-        /*}*/
-        /*li:nth-child(2){*/
-        /*    color: blue;*/
-        /*}*/
+                input:focus{
+                    background-color: yellow;
+                }
 
-        /*li:nth-last-child(2){*/
-        /*    background-color: red;*/
-        /*}*/
+                /*li:first-child{*/
+                /*    color: lightgreen;*/
+                /*}*/
 
-        /*li:nth-child(odd){*/
-        /*    color: hotpink;*/
-        /*}*/
+                /*li:last-child{*/
+                /*    color: cornflowerblue;*/
+                /*}*/
 
-        /*li:nth-child(even){*/
-        /*    color: green;*/
-        /*}*/
+                /*li:nth-child(3){*/
+                /*    color: brown;*/
+                /*}*/
+                /*li:nth-child(2){*/
+                /*    color: blue;*/
+                /*}*/
 
-        /*li:nth-child(n+4){*/
-        /*    color: green;*/
-        /*}*/
+                /*li:nth-last-child(2){*/
+                /*    background-color: red;*/
+                /*}*/
 
-        /*li:nth-child(3n-1){*/
-        /*    color: blue;*/
-        /*}*/
+                /*li:nth-child(odd){*/
+                /*    color: hotpink;*/
+                /*}*/
 
-        /*li:nth-child(3n+1){*/
-        /*    color: hotpink;*/
-        /*}*/
+                /*li:nth-child(even){*/
+                /*    color: green;*/
+                /*}*/
 
-        /*li:nth-child(4n){*/
-        /*    color: red;*/
-        /*}*/
+                /*li:nth-child(n+4){*/
+                /*    color: green;*/
+                /*}*/
 
-        /*h1:before{*/
-        /*    content:"👌";*/
-        /*}*/
+                /*li:nth-child(3n-1){*/
+                /*    color: blue;*/
+                /*}*/
 
-        /*h1:after{*/
-        /*    content:"☠️";*/
-        /*}*/
-       /* h1:first-letter{*/
-       /*     color:  aqua;*/
-       /* }*/
+                /*li:nth-child(3n+1){*/
+                /*    color: hotpink;*/
+                /*}*/
 
-       /* p:first-line{*/
-       /*     color: blue;*/
-       /* }*/
-       /* p::selection{*/
-       /*     background-color: lightpink;*/
-       /*     color: red;*/
+                /*li:nth-child(4n){*/
+                /*    color: red;*/
+                /*}*/
 
-       /* }*/
+                /*h1:before{*/
+                /*    content:"👌";*/
+                /*}*/
 
-       /* ::marker{*/
-       /*     content: "🌴";*/
-       /* }*/
+                /*h1:after{*/
+                /*    content:"☠️";*/
+                /*}*/
+               /* h1:first-letter{*/
+               /*     color:  aqua;*/
+               /* }*/
 
-       /* input::placeholder{*/
-       /*   color: purple;*/
-       /* }*/
+               /* p:first-line{*/
+               /*     color: blue;*/
+               /* }*/
+               /* p::selection{*/
+               /*     background-color: lightpink;*/
+               /*     color: red;*/
 
-       /* input::file-selector-button{*/
+               /* }*/
 
-       /*    color: darkcyan;*/
-       /* }*/
+               /* ::marker{*/
+               /*     content: "🌴";*/
+               /* }*/
 
-       /*input::file-selector-button:hover{*/
-       /*     background-color: yellow;*/
-       /* }*/
+               /* input::placeholder{*/
+               /*   color: purple;*/
+               /* }*/
 
-       /*button:hover{*/
-       /*    background-color: red;*/
-       /*    color: white;*/
-       /*}*/
+               /* input::file-selector-button{*/
 
+               /*    color: darkcyan;*/
+               /* }*/
 
-        /*Grouping Selector */
+               /*input::file-selector-button:hover{*/
+               /*     background-color: yellow;*/
+               /* }*/
 
-        h1,.my-item,.my-item2,#my-btn,p{
-            color: cornflowerblue;
-        }
+               /*button:hover{*/
+               /*    background-color: red;*/
+               /*    color: white;*/
+               /*}*/
 
 
+                /*Grouping Selector */
 
+                h1,.my-item,.my-item2,#my-btn,p{
+                    color: mediumturquoise;
+                }
 
 
 
-    </style>
 
-    <!-- <link> external resources link karanawa ape html code ekata -->
 
-    <link rel="stylesheet" href="HTML%20Project/Style/style.css">
 
-</head>
+            </style>
 
-<body>
-<!-- Inline CSS -->
-<!-- Internal CSS -->
-<!-- External CSS -->
+            <!-- <link> external resources link karanawa ape html code ekata -->
 
-<!-- Inline CSS -->
+            <link rel="stylesheet" href="HTML%20Project/Style/style.css">
 
-<!--<h1 style="color: white; background: black; text-align: center">Welcome to CSS</h1>-->
+        </head>
 
-<!--<h2 style="color: aqua; background: black;text-align: center" >Welcome to CSS</h2>-->
-<!--<h3 style="color: blueviolet;background: black; text-align: center">Welcome to CSS</h3>-->
+        <body>
+        <!-- Inline CSS -->
+        <!-- Internal CSS -->
+        <!-- External CSS -->
 
-<!--<br>-->
-<!--<br>-->
-<!--<br>-->
-<!--                -->
-<!--                <h4 class="my-topic">Hello world - 1</h4>-->
-<!--                <p>/////////////////////////////////////////////////////////////////</p>-->
-<!--                -->
-<!--                <h4 id="special-topic-1">Hello world - 2</h4>-->
-<!--                <p>/////////////////////////////////////////////////////////////////</p>-->
-<!--                -->
-<!--                <h4 class="my-topic">Hello world - 3</h4>-->
-<!--                <p>/////////////////////////////////////////////////////////////////</p>-->
-<!--                -->
-<!--                <h4 id="special-topic-2">Hello world - 4</h4>-->
-<!--                <p>/////////////////////////////////////////////////////////////////</p>-->
-<!--                -->
+        <!-- Inline CSS -->
 
-<!--            <a href="https://ijse.lk">IJSE1</a>-->
-<!--            <a href="http://ijse.lk" name="name1">IJSE2</a>-->
-<!--            <a href="www.ijse.lk">IJSE3</a>-->
-<!--            <a href="https://ijse.com" name="name2">IJSE4</a>-->
-<!--            <a href="www.solutions.lk">IJSE5</a>-->
-<!--            <a href="www.googleijselankasolutions.net">IJSE6</a>-->
-<!--            <a href="www.google ijse lankasolutions.net">IJSE7</a>-->
-<!--<br>-->
-<!--<br>-->
+        <!--<h1 style="color: white; background: black; text-align: center">Welcome to CSS</h1>-->
 
-<!--        <p name="name2">-->
-<!--            Welcome to Tech world-->
-<!--        </p>-->
+        <!--<h2 style="color: aqua; background: black;text-align: center" >Welcome to CSS</h2>-->
+        <!--<h3 style="color: blueviolet;background: black; text-align: center">Welcome to CSS</h3>-->
 
-<!--        <p>-->
-<!--            Welcome to Tech world !..-->
-<!--        </p>-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--                -->
+        <!--                <h4 class="my-topic">Hello world - 1</h4>-->
+        <!--                <p>/////////////////////////////////////////////////////////////////</p>-->
+        <!--                -->
+        <!--                <h4 id="special-topic-1">Hello world - 2</h4>-->
+        <!--                <p>/////////////////////////////////////////////////////////////////</p>-->
+        <!--                -->
+        <!--                <h4 class="my-topic">Hello world - 3</h4>-->
+        <!--                <p>/////////////////////////////////////////////////////////////////</p>-->
+        <!--                -->
+        <!--                <h4 id="special-topic-2">Hello world - 4</h4>-->
+        <!--                <p>/////////////////////////////////////////////////////////////////</p>-->
+        <!--                -->
 
+        <!--            <a href="https://ijse.lk">IJSE1</a>-->
+        <!--            <a href="http://ijse.lk" name="name1">IJSE2</a>-->
+        <!--            <a href="www.ijse.lk">IJSE3</a>-->
+        <!--            <a href="https://ijse.com" name="name2">IJSE4</a>-->
+        <!--            <a href="www.solutions.lk">IJSE5</a>-->
+        <!--            <a href="www.googleijselankasolutions.net">IJSE6</a>-->
+        <!--            <a href="www.google ijse lankasolutions.net">IJSE7</a>-->
+        <!--<br>-->
+        <!--<br>-->
 
-    <h1>Welcome Sri lanka!☠️</h1>
+        <!--        <p name="name2">-->
+        <!--            Welcome to Tech world-->
+        <!--        </p>-->
 
-<!--    <a href="https://www.bolton.ac.uk">Uobolton</a>-->
-<!--    <a href="https://www.westminister.ac.uk">UoWestminister</a>-->
-<!--    <a href="https://www.cardiffmet.ac.uk">CardiffMet</a>-->
+        <!--        <p>-->
+        <!--            Welcome to Tech world !..-->
+        <!--        </p>-->
 
-<!--    <input type="text">-->
 
-<!--<ol>-->
-<!--    <li>Java</li>-->
-<!--    <li>GO</li>-->
-<!--    <li>Net</li>-->
-<!--    <li>C++</li>-->
-<!--    <li>Python</li>-->
-<!--    <li>Pearl</li>-->
-<!--</ol>-->
+            <h1>Welcome Sri lanka!☠️</h1>
 
-<ol>
-    <li>A</li>
-    <li class="my-item">B</li>
-    <li>C</li>
-    <li class="my-item2">D</li>
-    <li>E</li>
-</ol>
+        <!--    <a href="https://www.bolton.ac.uk">Uobolton</a>-->
+        <!--    <a href="https://www.westminister.ac.uk">UoWestminister</a>-->
+        <!--    <a href="https://www.cardiffmet.ac.uk">CardiffMet</a>-->
 
-        <input placeholder="Enter Your Name">
-        <input  type="file">
-        <button id="my-btn">ClickMe!</button>
+        <!--    <input type="text">-->
 
+        <!--<ol>-->
+        <!--    <li>Java</li>-->
+        <!--    <li>GO</li>-->
+        <!--    <li>Net</li>-->
+        <!--    <li>C++</li>-->
+        <!--    <li>Python</li>-->
+        <!--    <li>Pearl</li>-->
+        <!--</ol>-->
 
+        <ol>
+            <li>A</li>
+            <li class="my-item">B</li>
+            <li>C</li>
+            <li class="my-item2">D</li>
+            <li>E</li>
+        </ol>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis rerum voluptates.
-    A aspernatur autem delectus dicta dignissimos distinctio dolore ea enim fugit id ipsum iure maxime omnis, repellendus tempore?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consequatur dolor ea earum esse explicabo, modi necessitatibus repellendus sequi.
-    Excepturi, incidunt, minus. Hic minus quam quasi ratione repellendus sequi.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error incidunt magni quibusdam quis.
-    Atque blanditiis cupiditate eius eveniet ex, facilis magnam nulla quae quia sapiente sed sequi sint sunt?
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Autem commodi cum dolores ducimus expedita incidunt iste labore molestias nihil nulla odit omnis qui quia, reiciendis repellat rerum tempora temporibus voluptatem!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis deserunt dicta eius,
-    et itaque, magnam nemo nihil nostrum perspiciatis porro, possimus praesentium qui reprehenderit repudiandae rerum tenetur.
-    Ex, placeat.
-</p>
+                <input placeholder="Enter Your Name">
+                <input  type="file">
+                <button id="my-btn">ClickMe!</button>
 
-</body>
-</html>
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis rerum voluptates.
+        A aspernatur autem delectus dicta dignissimos distinctio dolore ea enim fugit id ipsum iure maxime omnis, repellendus tempore?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam consequatur dolor ea earum esse explicabo, modi necessitatibus repellendus sequi.
+        Excepturi, incidunt, minus. Hic minus quam quasi ratione repellendus sequi.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error incidunt magni quibusdam quis.
+        Atque blanditiis cupiditate eius eveniet ex, facilis magnam nulla quae quia sapiente sed sequi sint sunt?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Autem commodi cum dolores ducimus expedita incidunt iste labore molestias nihil nulla odit omnis qui quia, reiciendis repellat rerum tempora temporibus voluptatem!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet corporis deserunt dicta eius,
+        et itaque, magnam nemo nihil nostrum perspiciatis porro, possimus praesentium qui reprehenderit repudiandae rerum tenetur.
+        Ex, placeat.
+    </p>
+
+    </body>
+    </html>
