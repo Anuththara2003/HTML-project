@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UseCase03</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+
+  <style>
+    section{
+      width: 100vw;
+      display: grid;
+      grid-template-columns:repeat(6,1fr);
+
+    }
+    section > div {
+      border: 2px solid black;
+      margin: 10px;
+      height: 60vh;
+
+      background-color: silver;
+    }
+
+    @media all and ( min-width :600px) and (max-width: 800px){
+      section{
+        grid-template-columns:repeat(3,1fr);
+      }
+    }
+
+    @media all and ( min-width :400px) and (max-width: 600px){
+      section{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+    @media all  and (max-width: 400px){
+      section{
+        grid-template-columns:repeat(1,1fr);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+          <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </section>
+
+</body>
+</html>

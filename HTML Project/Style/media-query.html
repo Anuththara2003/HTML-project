@@ -2,19 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Media_Query</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>media_query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        @media all and (max-width: 800px) {
-            h1{
-                background-color: yellow;
+        #header{
+            background-color: greenyellow;
+            position: relative;
+            height: 70px;
+        }
+
+        #logo{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            margin: auto;
+        }
+
+        #navigation{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        nav a{
+            margin-left: 40px;
+        }
+
+        #menu{
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: none;
+        }
+
+        @media all and (max-width: 500px){
+            #menu{
+                display: block;
             }
 
+            #navigation{
+                display: none;
+            }
         }
+
     </style>
 </head>
+
 <body>
-  <h1>Hello</h1>
+<header id="header">
+    <img id="logo" src="../assets/Images/logoijse.png" width="100px">
+    <nav id="navigation">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="">Contact</a>
+    </nav>
+    <button id="menu">Menu</button>
+</header>
 </body>
 </html>
