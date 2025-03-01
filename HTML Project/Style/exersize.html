@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+
+  <style>
+                      section {
+                        height: 500px;
+                        width: 1000px;
+                        border: 2px solid darkorange;
+                        position: relative;
+                      }
+
+                      section > div:first-child {
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        background-color: darkblue;
+                        position: absolute;
+                        right: 0;
+                      }
+
+                      section > div:nth-child(2) {
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        background-color: darkorchid;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                      }
+
+                      section > div:nth-child(3) {
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        background-color: green;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                      }
+
+                      section > div:nth-child(4) {
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        background-color: red;
+                        position: absolute;
+                        top: 0;
+                      }
+
+
+                      section > div:nth-child(5) {
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        background-color: deeppink;
+                        position: absolute;
+                         top: calc(400px /2);
+                        left: calc(900px/2);
+
+                        /*top: 0;*/
+                        /*bottom: 0;*/
+                        /*left: 0;*/
+                        /*right: 0;*/
+                        /*margin: auto;*/
+
+                      }
+  </style>
+</head>
+<body>
+                  <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </section>
+</body>
+</html>
