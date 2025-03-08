@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sampleWeb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+  <link rel="stylesheet" href="../assets/lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/lib/fontawesome/js/all.min.js">
+</head>
+
+<style>
+  header{
+    display: flex;
+    position: relative;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+
+  }
+
+  header > nav{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  header > nav > ul {
+    position: relative;
+    display: flex;
+    gap: 42px;
+    list-style: none;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+
+  header > nav > ul > li{
+    display: inline;
+    text-decoration: none;
+    font-size: 21px;
+
+  }
+
+  header > nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media all and (max-width: 768px){
+
+    header > nav > ul {
+      display: none;
+    }
+    .fa-bars {
+      display: flex;
+    }
+    header{
+      padding:0 15px;
+    }}
+
+  main{
+    position: relative;
+    border: 1px solid black;
+    width:auto;
+    height:90vh;
+    display: grid;
+    grid-template-columns:repeat(2 , 1fr);
+    place-items: center;
+  }
+
+  main > img{
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+
+  main > div  {
+    text-align: center;
+  }
+
+
+  .home > h1 {
+    text-align: center;
+  }
+
+  .service  > h1 {
+    text-align: center;
+  }
+
+  .service > div {
+    display: grid;
+    margin: 50px;
+    gap: 10px;
+    grid-template-columns:repeat(3 , 1fr);
+  }
+
+  .service > div > div{
+    border: 2px solid black;
+    text-align: center;
+    height: 500px;
+  }
+
+
+  @media all and (max-width: 1050px) and (min-width: 500px){
+    main {
+      grid-template-columns: repeat(1, 1fr);
+    }}
+
+
+  @media all and (max-width: 500px) {
+    main {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    main > div, main > img {
+      width: auto;
+    }}
+
+
+  @media all and (max-width: 1050px) {
+
+    .service > div {
+      grid-template-columns:repeat(1, 1fr);
+    }}
+
+
+  .Awards{
+    border: 1px solid black;
+  }
+
+  .Awards h1{
+    text-align: center;
+  }
+
+  .Awards > div  {
+    display: grid;
+    margin: 50px;
+    gap: 10px;
+    place-items: center;
+    text-align: center;
+    grid-template-columns:repeat(2 , 1fr);
+
+
+  }
+  .Awards > div > :first-child {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+
+  }
+
+  .Awards > div > :first-child > iframe{
+    width: 500px;
+    height: 500px;
+
+  }
+
+  /* Responsive Styles */
+  @media all and (max-width: 1050px) {
+    .Awards > div {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    .Awards > div > :first-child {
+      width: 100%;
+      height: 300px;
+
+    }
+    .Awards > div > :first-child > iframe{
+      width: 100%;
+      height: 300px;
+
+    }}
+
+
+  button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    font-weight: bold;
+  }
+
+  footer > div {
+    text-align: center;
+  }
+
+</style>
+<body>
+
+<header>
+  <nav>
+    <img src="../assets/Images/logoijse.png" alt="Ijse" width="200px" height="100px">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#Awards">Awards</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Us</a></li>
+    </ul>
+    <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+  </nav>
+</header>
+
+<main class="home"  id="home" >
+  <div>
+    <h1>Welcome</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur radicalising elit.</p>
+    <button>click me</button>
+  </div>
+  <img src="../assets/Images/image2.jpg" alt="home img">
+</main>
+
+<section class="service" id="service">
+  <h1>services</h1>
+  <div>
+    <div>
+      <h1>Lorem</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+        fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
+      <button>click me</button>
+    </div>
+
+    <div>
+      <h1>Lorem</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+        fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
+      <button>click me</button>
+    </div>
+
+    <div>
+      <h1>Lorem</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Ad architect consectetur cum ex explicable
+        fugal illumos impeded, gusto edit quasi redundancy reprehend, sed venial vero voluptuous! site quo reprehend suspicious.</p>
+      <button>click me</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="Awards" id="Awards">
+  <h1>Awards</h1>
+  <div>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/9uGopcdfbBE?si=_tjSc98UC91leDlM"
+                 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur radicalising elit. Accusation, pianissimos arum impeded image
+        gusto dispenser quicksand squamous rerun escape sed suspicious veritas! Commodity debits doldrums,
+        event senescent sapient sequin under.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <p>&copy; <strong>2020 - 2023 Your Company Name. All rights reserved.</strong></p>
+  </div>
+</footer>
+
+</body>
+</html>
