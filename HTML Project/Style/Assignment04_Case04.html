@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment04_Case04</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/lib/normalize.css">
+  <link rel="stylesheet"href="../assets/lib/fontawesome/css/all.min.css">
+
+  <style>
+
+    div{
+      width: 300px;
+      aspect-ratio: 1/1;
+      background-color: white;
+      border: 5px solid crimson;
+      border-radius: 360px;
+      animation-iteration-count: infinite;
+      animation-direction: inherit;
+      animation-timing-function: ease;
+      animation-name: as_rotate;
+      animation-duration: 2s;
+    }
+
+    nav>div{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    @keyframes as_rotate {
+
+      from{
+        width: 100px;
+        /*transform: rotate(0deg);*/
+      }
+      to{
+        width: 600px;
+        opacity: 0;
+        /*transform: rotate(360deg);*/
+      }
+
+    }
+
+  </style>
+
+
+</head>
+<body>
+<nav>
+<div></div>
+</nav>
+</body>
+</html>
