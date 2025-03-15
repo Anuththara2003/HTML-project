@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+
+  <style>
+
+    nav>div{
+      position: relative;
+      width: 800px;
+      height: 600px;
+      background-color: white;
+      border: 5px solid black;
+    }
+
+    nav>div>div {
+
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: chocolate;
+      border: 1px solid black;
+      animation-name: my_colours;
+      transition-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      animation-direction:inherit ;
+    }
+
+    @keyframes my_colours{
+    0%{
+      left: 0;
+      top: 0;
+
+
+    }
+      25%{
+        left: 100%;
+        transform:translateX(-100%);
+        top: 0;
+
+
+      }
+      50%{
+        left: 100%;
+        top: 100%;
+        transform: translate(-100%,-100%);
+
+      }
+
+      75%{
+
+        left: 0;
+        top: 100%;
+        transform: translateY(-100%);
+      }
+
+    100%{
+      top: 0;
+      left: 0;
+    }
+
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div>
+  <div></div>
+</div>
+</nav>
+</body>
+</html>
