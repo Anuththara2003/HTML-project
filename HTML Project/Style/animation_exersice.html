@@ -1,74 +1,137 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Animations</title>-->
+
+<!--  <style>-->
+
+<!--    nav>div{-->
+<!--      position: relative;-->
+<!--      width: 800px;-->
+<!--      height: 600px;-->
+<!--      background-color: white;-->
+<!--      border: 5px solid black;-->
+<!--    }-->
+
+<!--    nav>div>div {-->
+
+<!--      position: absolute;-->
+<!--      width: 100px;-->
+<!--      height: 100px;-->
+<!--      background-color: chocolate;-->
+<!--      border: 1px solid black;-->
+<!--      animation-name: my_colours;-->
+<!--      transition-timing-function: ease-in-out;-->
+<!--      animation-iteration-count: infinite;-->
+<!--      animation-duration: 3s;-->
+<!--      animation-direction:inherit ;-->
+<!--    }-->
+
+<!--    @keyframes my_colours{-->
+<!--    0%{-->
+<!--      left: 0;-->
+<!--      top: 0;-->
+
+
+<!--    }-->
+<!--      25%{-->
+<!--        left: 100%;-->
+<!--        transform:translateX(-100%);-->
+<!--        top: 0;-->
+
+
+<!--      }-->
+<!--      50%{-->
+<!--        left: 100%;-->
+<!--        top: 100%;-->
+<!--        transform: translate(-100%,-100%);-->
+
+<!--      }-->
+
+<!--      75%{-->
+
+<!--        left: 0;-->
+<!--        top: 100%;-->
+<!--        transform: translateY(-100%);-->
+<!--      }-->
+
+<!--    100%{-->
+<!--      top: 0;-->
+<!--      left: 0;-->
+<!--    }-->
+
+<!--    }-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav>-->
+<!--<div>-->
+<!--  <div></div>-->
+<!--</div>-->
+<!--</nav>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fix</title>
 
-  <style>
+    <style>
+        section {
+            width: 700px;
+            aspect-ratio: 1/1;
+            border: 4px solid black;
+            position: absolute;
+        }
 
-    nav>div{
-      position: relative;
-      width: 800px;
-      height: 600px;
-      background-color: white;
-      border: 5px solid black;
-    }
+        section > div {
+            position: relative;
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: aqua;
 
-    nav>div>div {
+            animation-name: my-move;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
 
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      background-color: chocolate;
-      border: 1px solid black;
-      animation-name: my_colours;
-      transition-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-duration: 3s;
-      animation-direction:inherit ;
-    }
+        }
 
-    @keyframes my_colours{
-    0%{
-      left: 0;
-      top: 0;
+        @keyframes my-move {
+            0% {
+                margin: 0;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                margin-left: calc(700px - 100px);
+                margin-top: 0;
+                transform: rotate(360deg);
+            }
+
+            50% {
+                margin-left: calc(700px - 100px);
+                margin-top: calc(700px - 100px);
+                transform: rotate(0deg);
+            }
+
+            75% {
+                margin-left: 0;
+                margin-top: calc(700px - 100px);
+                transform: rotate(360deg);
+            }
 
 
-    }
-      25%{
-        left: 100%;
-        transform:translateX(-100%);
-        top: 0;
-
-
-      }
-      50%{
-        left: 100%;
-        top: 100%;
-        transform: translate(-100%,-100%);
-
-      }
-
-      75%{
-
-        left: 0;
-        top: 100%;
-        transform: translateY(-100%);
-      }
-
-    100%{
-      top: 0;
-      left: 0;
-    }
-
-    }
-  </style>
+        }
+    </style>
 </head>
 <body>
-<nav>
-<div>
-  <div></div>
-</div>
-</nav>
+<section>
+    <div></div>
+</section>
 </body>
 </html>
