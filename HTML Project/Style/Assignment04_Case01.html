@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment04</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+    <link rel="stylesheet"href="../assets/lib/fontawesome/css/all.min.css">
+
+    <style>
+
+        nav{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: fit-content;
+            margin: auto;
+        }
+       nav >div{
+            background-color: burlywood;
+            width: 300px;
+            height: 50px;
+            margin: 50px -250px ;
+            display: flex;
+            align-items: center;
+
+
+            justify-content: center;
+            /*padding-right: 50px;*/
+
+            transition-timing-function: ease;
+            transition:  2s;
+            position: relative;
+
+            box-shadow: 0px 0px  5px 0px red;
+
+
+        }
+
+        div:hover{
+            margin: 80px 0 ;
+        }
+
+        div>i{
+         position: absolute;
+            right: 20px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+<div>
+    <h4>Menu</h4>
+    <i class="fa-solid fa-address-book"></i>
+</div>
+<div>
+    <h4>Menu Two</h4>
+    <i class="fa-solid fa-van-shuttle"></i>
+</div>
+<div>
+    <h4>Menu Three</h4>
+    <i class="fa-solid fa-globe"></i>
+</div>
+<div>
+    <h4>Menu Four</h4>
+    <i class="fa-solid fa-layer-group"></i>
+</div>
+<div>
+    <h4>Menu Five</h4>
+    <i class="fa-solid fa-cart-shopping"></i>
+</div>
+</nav>
+</body>
+</html>
